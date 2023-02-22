@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6095699529875733757}
   - component: {fileID: 8952222334801100162}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cyan_Colliders
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1342,7 +1342,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698465270580507273}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.04, y: -1.18, z: 0}
+  m_LocalPosition: {x: -0.87, y: -1.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2434,9 +2434,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4589382041670680562}
   - component: {fileID: 4003783904405547002}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Blue_Colliders
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2491,9 +2491,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3356725592644208834}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Colliders
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2527,9 +2527,9 @@ GameObject:
   m_Component:
   - component: {fileID: 264770208421044594}
   - component: {fileID: 6846496531860218476}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Yellow_Colliders
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2585,9 +2585,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3962370151736289261}
   - component: {fileID: 3467077716168855806}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pink_Colliders
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

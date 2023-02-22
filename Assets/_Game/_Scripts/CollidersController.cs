@@ -9,21 +9,39 @@ namespace BenStudios
 
     public class CollidersController : MonoBehaviour
     {
+        #region Variables
 
-        //[Tooltip("Place 0.Pink 1.Blue 2.Yellow 3.Cyan")]
-        //[SerializeField] private List<GameObject> m_colliderTransforms;
-        //[SerializeField] private ColorCollidersDictionary coloColliders;
         [SerializeField] private List<ColliderList> colorColliders;
+
+        #endregion Variables
+
+        #region Unity Methods
+
         private void Start()
         {
             _EnablePlayerColorCollider();
         }
+        #endregion Unity Methods
+
+        #region Private Methods
+
         private void _EnablePlayerColorCollider()
         {
             colorColliders.Find(x => x.color == GlobalVariables.currentPlayerColor).colliderList.ForEach(x => x.SetActive(false));
-            // coloColliders[GlobalVariables.currentPlayerColor].ForEach(x => x.SetActive(false));
-            //m_colliderTransforms[(int)GlobalVariables.currentPlayerColor].SetActive(false);
         }
+        private void ResetAllColliders()
+        {
+            colorColliders.Find(x => x.color == GlobalVariables.currentPlayerColor).colliderList.ForEach(x => x.SetActive(true));
+        }
+        #endregion Private Methods
+
+        #region Callbacks
+        private void Callback_On_Player_Color_Changed(object args)
+        {
+            ResetAllColliders();
+            _EnablePlayerColorCollider();
+        }
+        #endregion Callbacks
     }
     [System.Serializable]
     public class ColliderList

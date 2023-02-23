@@ -8,4 +8,11 @@ namespace BenStudios.Enums
         Yellow = 2,
         Cyan = 3,
     }
+
+    public enum PlayerState
+    {
+        Alive = 0,
+        Dead = 1,
+    }
+
 }

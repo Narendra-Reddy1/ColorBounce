@@ -117,6 +117,8 @@ namespace Coffee.UIExtensions
                 AttractParticles(ps);
             }
         }
+
+        #region Legacy
         //        internal void Attract()
         //        {
         //            if (m_ParticleSystem == null) return;
@@ -200,6 +202,8 @@ namespace Coffee.UIExtensions
         //            }
         //            return dstPos;
         //        }
+        #endregion Legacy
+
         internal void AttractParticles(ParticleSystem particleSystem)
         {
 

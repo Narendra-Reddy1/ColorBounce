@@ -29,6 +29,8 @@ public class GameplayManager : MonoBehaviour, IInitializer
 
     public void Init()
     {
+        var main = m_playerParticleSystem.main;
+        main.simulationSpace = ParticleSystemSimulationSpace.Local;
         GlobalVariables.currentCheckpoint = m_initialPoint;
         GlobalVariables.playerParticleSystem = m_playerParticleSystem;
     }

@@ -65,6 +65,7 @@ namespace BenStudios.EventSystem
 
         //SelectionScreen
         EVENT_ON_DIFFICULTY_LEVEL_SELECTED,
+        EVENT_ON_PLAYER_RESPAWNED,
     }
     #endregion
 }

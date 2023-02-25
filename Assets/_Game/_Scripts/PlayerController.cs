@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour, IInitializer
         Debug.Log($"triggger");
         if (other.CompareTag("Checkpoint"))
         {
+            GlobalVariables.currentCheckpoint.gameObject.SetActive(false);
             GlobalVariables.currentCheckpoint = other.GetComponent<Checkpoint>();
             GlobalEventHandler.TriggerEvent(EventID.EVENT_ON_NEW_CHECKPOINT_REACHED);
         }
@@ -107,6 +108,7 @@ public class PlayerController : MonoBehaviour, IInitializer
     private void _OnPlayerHitObstacle()
     {
         GlobalVariables.playerState = PlayerState.Dead;
+        m_playerRb.velocity = Vector3.zero;
         m_playerRb.isKinematic = true;
         m_playerCollider.enabled = false;
         playerSpriteRenderer.enabled = false;
@@ -116,6 +118,7 @@ public class PlayerController : MonoBehaviour, IInitializer
         m_transform.DOMoveY(GlobalVariables.currentCheckpoint.transform.position.y, .25f);
         m_playerCollider.enabled = true;
         playerSpriteRenderer.enabled = true;
+        GlobalEventHandler.TriggerEvent(EventID.EVENT_ON_PLAYER_RESPAWNED);
         GlobalVariables.playerState = PlayerState.Alive;
     }
 

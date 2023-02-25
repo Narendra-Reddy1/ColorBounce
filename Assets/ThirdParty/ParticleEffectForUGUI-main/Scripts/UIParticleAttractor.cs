@@ -260,7 +260,7 @@ namespace Coffee.UIExtensions
         {
             var isUI = _uiParticle && _uiParticle.enabled;
             var psPos = particleSystem.transform.position;
-            var attractorPos = transform.position;
+            var attractorPos = transform.TransformPoint(transform.localPosition);
             var dstPos = attractorPos;
             if (particleSystem.main.simulationSpace == ParticleSystemSimulationSpace.Local)
             {

@@ -17,11 +17,24 @@ namespace BenStudios.EventSystem
         //Player
         EVENT_ON_PLAYER_WIN,
 
-        //Spot point
+        //PHOTON NETWORK
+        REQUEST_TO_CONNECT_SERVER,
+        EVENT_ON_CONNECTED_TO_SERVER,
+        EVENT_ON_CONNECTED_TO_MASTER,
 
-        //Goat
+        REQUEST_TO_JOIN_ROOM,
+        REQUEST_TO_LEAVE_ROOM,
+        REQUEST_TO_JOIN_RANDOM_ROOM,
+        EVENT_ON_ROOM_CREATED,
+        EVENT_ON_CREATE_ROOM_FAILED,
+        EVENT_ON_JOINED_ROOM,
+        EVENT_ON_JOIN_RANDOM_ROOM_FAILED,
+        
+        EVENT_ON_JOINED_LOBBY,
+        EVENT_ON_LEFT_LOBBY,
+        EVENT_ON_PLAYER_LEFT,
+        EVENT_ON_PLAYER_ENTERED,
 
-        //Tiger
 
         //Gameplay
         EVENT_ON_NEW_CHECKPOINT_REACHED,
@@ -66,6 +79,7 @@ namespace BenStudios.EventSystem
         //SelectionScreen
         EVENT_ON_DIFFICULTY_LEVEL_SELECTED,
         EVENT_ON_PLAYER_RESPAWNED,
+
     }
     #endregion
 }

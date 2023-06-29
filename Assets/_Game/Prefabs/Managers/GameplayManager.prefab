@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420695021317157970}
-  - component: {fileID: 420695021317157981}
+  - component: {fileID: 2255520646548607851}
   m_Layer: 0
   m_Name: GameplayManager
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &420695021317157981
+--- !u!114 &2255520646548607851
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,3 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_checkpointParticleSystem: {fileID: 0}
+  m_playerParticleSystem: {fileID: 0}
+  m_initialPoint: {fileID: 0}

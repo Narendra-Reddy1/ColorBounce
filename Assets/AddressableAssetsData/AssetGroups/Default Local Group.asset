@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b1a1b9c3cb361c243ad9138280c30f64
+  m_SerializeEntries:
+  - m_GUID: 06b4e0dbbc18f374aad08810483eb1e1
+    m_Address: Assets/_Game/Prefabs/Screens/MainMenuScreen.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ef9bb64995e12114cafdf068b4e1ca4a
+    m_Address: Assets/_Game/Prefabs/Gameplay/Gameplay.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 298a0c16007839c42ab807fbc30b7272, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 164012169a0c90b42b3e43826cec5d37, type: 2}
+    - {fileID: 11400000, guid: 5fff11a3a377dde4b8037495b90cd627, type: 2}
